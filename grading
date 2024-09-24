@@ -1,0 +1,29 @@
+// a program to help implement the grading system
+#include <stdio.h>
+
+int main() {
+    int unit_1,unit_2,unit_3;
+    int average;
+    printf("Enter your marks for unit_1");
+    scanf("%d", &unit_1);
+    
+    printf("Enter your marks for unit_2");
+    scanf("%d",&unit_2);
+    
+    printf("Enter your marks for unit_3");
+    scanf("%d", &unit_3);
+    
+    average=(unit_1+unit_2+unit_3)/3;
+    if (average>=70){ 
+        printf("grade = A");}
+    else if(average>=60){ 
+        printf("grade = B");}
+    else if(average>=50){ 
+        printf("grade = C");}
+    else if(average>=40){ 
+        printf("grade = D");}
+    else {
+        printf("grade = E");}
+        
+        return 0;
+}
